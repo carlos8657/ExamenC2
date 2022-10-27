@@ -145,3 +145,14 @@ function registro(){
     totalGeneral.innerHTML= sumaTotal.toFixed(2);
 
 }
+
+function borrarRegistros(){
+
+    // Eliminar parrafo
+    document.getElementById('registro').innerHTML = ""
+
+    // Eliminar total general
+    sumaTotal = sumaTotal * 0
+    document.getElementById('totalGeneral').innerHTML = sumaTotal;
+
+}
