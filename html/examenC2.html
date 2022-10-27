@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo_examen2.css">
+    <script src="/js/examenC2.js"></script>
     <title>ExamenC2</title>
 </head>
 <body>
@@ -36,8 +37,8 @@
                 <input type="text" id="totalComision" name="totalComision" placeholder="Total Comision" readonly>
                 <input type="text" id="totalPagar" name="totalPagar" placeholder="Total a pagar" readonly>
                 
-                <button class="btn" id="btnCalcular" onclick="calcular()">Calcular</button>
-                <button class="btn" id="btnRegistro" onclick="registro()">Registro</button>
+                <button class="btn" id="btnCalcular">Calcular</button>
+                <button class="btn" id="btnRegistro">Registro</button>
             </div>
 
             <div class="fila2">
@@ -50,9 +51,9 @@
             </div>
 
             <div class="fila3">
-                <button class="btn" onclick="borrarRegistros()">Borrar registro</button>
+                <button class="btn">Borrar registro</button>
                 <p style="padding-left: 500px;">Total General:</p>
-                <p id="totalGeneral"> </p>
+                <p id="totalGeneral"></p>
             </div>
             </div>
         </div>
