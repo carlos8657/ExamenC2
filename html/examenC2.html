@@ -21,7 +21,7 @@
                 <select name="monedaOrigen" id="monedaOrigen" onchange="cambio()">
                     <option value="0"  style="display: none;">Moneda de Origen</option>
                     <option value="19.85">Peso Mexicano</option>
-                    <option value="1">Dólar Americano</option>
+                    <option value="1">Dólar Estadounidense</option>
                     <option value="1.35">Dólar Canadiense</option>
                     <option value=".99">Euro</option>
                 </select>
@@ -29,7 +29,7 @@
                 <select name="monedaDestino" id="monedaDestino" onchange="cambio()">
                     <option value="0"  style="display: none;">Moneda de Destino</option>
                     <option value="19.85">Peso Mexicano</option>
-                    <option value="1">Dólar Americano</option>
+                    <option value="1">Dólar Estadounidense</option>
                     <option value="1.35">Dólar Canadiense</option>
                     <option value=".99">Euro</option>
                 </select>
@@ -38,7 +38,7 @@
                 <input type="text" id="totalPagar" name="totalPagar" placeholder="Total a pagar" readonly>
                 
                 <button class="btn" id="btnCalcular" onclick="calcular()">Calcular</button>
-                <button class="btn" id="btnRegistro">Registro</button>
+                <button class="btn" id="btnRegistro" onclick="registro()">Registro</button>
             </div>
 
             <div class="fila2">

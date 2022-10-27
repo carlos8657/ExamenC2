@@ -89,7 +89,59 @@ function calcular(){
             document.getElementById('totalPagar').value = totalPagar.toFixed(2);
         }
         
-
     }
+}
+
+let sumaTotal = 0;
+
+function registro(){
+    let cantidad = document.getElementById('cantidad').value;
+    let monedaOrigen = document.getElementById('monedaOrigen').value;
+    let monedaDestino = document.getElementById('monedaDestino').value;
+    let subtotal = document.getElementById('subtotal').value;
+    let totalComision = document.getElementById('totalComision').value;
+    let totalPagar = document.getElementById('totalPagar').value;
+    let txtOrigen = "";
+    let txtDestino = "";
+    let parrafo = "";
+
+    // Texto origen
+    if(monedaOrigen == 19.85){
+        // Peso mexicano
+        txtOrigen = "Pesos Mexicanos"
+    }else if (monedaOrigen == 1){
+        // Dolar Estadounidense
+        txtOrigen = "Dolares Estadounidenses"
+    }else if(monedaOrigen == 1.35){
+        // Dolar canadiense
+        txtOrigen = "Dolares Canadienses"
+    }else if(monedaOrigen == .99){
+        // Euro
+        txtOrigen = "Euros"
+    }
+
+    // Texto Destino
+    if(monedaDestino == 19.85){
+        // Peso mexicano
+        txtDestino = "Pesos Mexicanos"
+    }else if (monedaDestino == 1){
+        // Dolar Estadounidense
+        txtDestino = "Dolares Estadounidenses"
+    }else if(monedaDestino == 1.35){
+        // Dolar canadiense
+        txtDestino = "Dolares Canadienses"
+    }else if(monedaDestino == .99){
+        // Euro
+        txtDestino = "Euros"
+    }
+
+    // Concatenacion del parrafo
+    parrafo += "<p>" + cantidad + " " + txtOrigen + " a " + txtDestino + " Subtotal: " + subtotal + " Comision: " + totalComision + " Total: " + totalPagar +"</p>" + "<br>"
+    document.getElementById('registro').innerHTML =  document.getElementById('registro').innerHTML + parrafo;
+
+    // Total General
+    let totalGeneral = document.getElementById('totalGeneral');
+    sumaTotal = sumaTotal + parseFloat(totalPagar)
+    totalGeneral.innerHTML= sumaTotal.toFixed(2);
 
 }
