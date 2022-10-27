@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 80px;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+footer{
+    background-color: crimson;
+    text-align: center;
+}
+
+.fila1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+.fila2{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    text-align: center  ;
+}
+
+.fila3{
+    display: flex;
+    margin: 20px;
+}
+
+#registro{
+    margin-top: 20px;
+    background-color: rgb(241, 241, 204);
+    min-height: 100px;
+}
+
+#contenido{
+    min-height: 718px;
+    background-color: rgb(231, 231, 91);
+}
+
+.btn{
+    width: 150px;
+}

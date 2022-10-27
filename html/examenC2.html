@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo_examen2.css">
+    <title>ExamenC2</title>
+</head>
+<body>
+
+    <header>
+        <h1> Encabezado</h1>
+    </header>
+    
+    <div class="contenedor">
+        <div id="contenido">
+            <div class="fila1">
+                <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad">
+                <select name="monedaOrigen" id="monedaOrigen" onchange="cambio()">
+                    <option value="0"  style="display: none;">Moneda de Origen</option>
+                    <option value="19.85">Peso Mexicano</option>
+                    <option value="1">Dólar Americano</option>
+                    <option value="1.35">Dólar Canadiense</option>
+                    <option value=".99">Euro</option>
+                </select>
+
+                <select name="monedaDestino" id="monedaDestino" onchange="cambio()">
+                    <option value="0"  style="display: none;">Moneda de Destino</option>
+                    <option value="19.85">Peso Mexicano</option>
+                    <option value="1">Dólar Americano</option>
+                    <option value="1.35">Dólar Canadiense</option>
+                    <option value=".99">Euro</option>
+                </select>
+                <input type="text" id="subtotal" name="subtotal" placeholder="Subtotal" readonly>
+                <input type="text" id="totalComision" name="totalComision" placeholder="Total Comision" readonly>
+                <input type="text" id="totalPagar" name="totalPagar" placeholder="Total a pagar" readonly>
+                
+                <button class="btn" id="btnCalcular" onclick="calcular()">Calcular</button>
+                <button class="btn" id="btnRegistro" onclick="registro()">Registro</button>
+            </div>
+
+            <div class="fila2">
+                <h1>Registros realizados</h1>
+                <div id="registro">
+
+                </div>
+                <br>
+                <hr>
+            </div>
+
+            <div class="fila3">
+                <button class="btn" onclick="borrarRegistros()">Borrar registro</button>
+                <p style="padding-left: 500px;">Total General:</p>
+                <p id="totalGeneral"> </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Pie de pagina</h1>
+    </footer>
+
+</body>
+</html>
